@@ -1,0 +1,266 @@
+.navBurger {
+    position          : fixed;
+    right             : 20px;
+    top               : 20px;
+    cursor            : pointer;
+    background        : #1880bf;
+    box-sizing        : border-box;
+    background-clip   : content-box;
+    width             : 30px;
+    height            : 24px;
+    border-top        : 11px solid transparent;
+    border-bottom     : 11px solid transparent;
+    -webkit-transform : rotate(0deg);
+    transform         : rotate(0deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    transition        : all 0.25s ease-in-out;
+
+    &:before,
+    &:after {
+        content           : "";
+        position          : absolute;
+        background        : #1880bf;
+        height            : 2px;
+        width             : 100%;
+        right             : 0;
+        will-change       : rotate;
+        -webkit-transform : rotate(0deg);
+        transform         : rotate(0deg);
+        -webkit-transition: all 0.5s ease;
+        transition        : all 0.5s ease;
+    }
+
+    &:before {
+        top: -10px;
+    }
+
+    &:after {
+        bottom: -10px;
+        width : 90%;
+    }
+
+    &.active {
+        background     : transparent;
+        background-clip: content-box;
+    }
+
+    &.active:before {
+        -webkit-transform: rotate(135deg);
+        transform        : rotate(135deg);
+        top              : 0;
+        width            : 110%;
+    }
+
+    &.active:after {
+        bottom           : 0;
+        -webkit-transform: rotate(-135deg);
+        transform        : rotate(-135deg);
+        width            : 110%;
+    }
+}
+
+.burger-wraper {
+    height  : 39px;
+    width   : 100%;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+}
+
+.overlay {
+    position        : fixed;
+    background      : #fff;
+    top             : 39px;
+    right           : 0;
+    width           : 100%;
+    opacity         : 0;
+    transform-origin: right top;
+    transform       : scale(0);
+    visibility      : hidden;
+    transition      : all .4s ease-in-out;
+    overflow        : hidden;
+
+    &.open {
+        opacity   : 1;
+        visibility: visible;
+        transform : scale(1);
+
+        li {
+            width           : 97%;
+            display         : block;
+            animation       : fadeInRight .4s cubic-bezier(.42, .83, .7, 1.5) forwards;
+            animation-delay : .4s;
+            transform       : rotate(-7deg);
+            transform-origin: right bottom;
+
+            &:nth-of-type(2) {
+                animation-delay: .5s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: .6s;
+            }
+
+            &:nth-of-type(4) {
+                animation-delay: .7s;
+            }
+
+            &:nth-of-type(5) {
+                animation-delay: .8s;
+            }
+        }
+    }
+}
+
+.overlayMenu {
+    position  : absolute;
+    text-align: right;
+    right     : 10vw;
+    bottom    : 10vw;
+
+    ul {
+        list-style: none;
+        padding   : 0;
+        margin    : 0 auto;
+        display   : block;
+        position  : relative;
+        height    : 100%;
+
+        li {
+            display : block;
+            position: relative;
+            opacity : 0;
+            width   : 100%;
+
+            a {
+                display        : inline-block;
+                border         : 1px solid rgba(255, 255, 255, .09);
+                color          : #fff;
+                text-decoration: none;
+                font-size      : 30px;
+                padding        : 10px 40px 10px 40px;
+                margin         : 5px 0;
+                transition     : .2s;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    transform : translateX(-2px);
+                    outline   : 1px solid rgba(255, 255, 255, .3);
+                    background: rgba(255, 255, 255, .03);
+                }
+            }
+        }
+    }
+}
+
+.navBurger {
+    position: absolute;
+    right   : 31px;
+    top     : 6px;
+    width   : 19px;
+    height  : 25px;
+
+    &:before,
+    &:after {
+        height: 3px;
+    }
+
+    &:before {
+        top: -6px;
+    }
+
+    &:after {
+        bottom: -6px;
+        width : 100%;
+    }
+
+    &.active {
+        z-index: 2;
+    }
+}
+
+.overlay {
+
+    &.open {
+        display        : flex;
+        flex-direction : row;
+        justify-content: center;
+        z-index        : 2;
+        position       : absolute;
+    }
+}
+
+.overlayMenu {
+    position  : static;
+    width     : 100%;
+    text-align: center;
+
+    ul {
+        width      : 100%;
+        padding-top: 9px;
+
+        li {
+            box-sizing   : border-box;
+            margin-top   : 0px;
+            margin-bottom: 7px !important;
+            padding      : 0;
+            color        : #0777ba;
+            border       : 0;
+            text-align   : center;
+        }
+
+        li:nth-of-type(2) {
+            margin-bottom: 0;
+        }
+
+        li a {
+            margin         : 0;
+            width          : 95.8%;
+            padding        : 11px 0px 12px 0px;
+            text-indent    : 18px;
+            color          : #0777ba;
+            font-size      : 15px;
+            text-align     : left;
+            text-decoration: underline;
+            box-sizing     : border-box;
+        }
+
+        li a:hover,
+        li a:active {
+            background-color: #e6ecf1;
+        }
+
+        li:nth-of-type(4) {
+            padding-top   : 4px;
+            margin-bottom : 0px;
+            padding-bottom: 8px;
+        }
+
+        #link {
+            border         : 2px solid #0777ba;
+            text-decoration: none;
+            text-align     : center;
+            padding-top    : 13px;
+            text-indent    : 5px;
+        }
+
+    }
+}
+
+.help-button {
+    display: none;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left   : 50px;
+    }
+
+    100% {
+        opacity  : 1;
+        left     : 0;
+        transform: rotate(0deg);
+    }
+}

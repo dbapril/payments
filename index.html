@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Settlement</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+</head>
+
+<body>
+
+    <div class="header-wraper">
+        <header>
+
+            <div id="log-in"></div>
+
+            <img src="./images/title.png" alt="title">
+
+            <div class="overlay">
+                <nav class="overlayMenu">
+                    <ul role="menu">
+                        <li><a href="#" role="menuitem">Как это работает</a></li>
+                        <li><a href="#" role="menuitem">Вопрос-ответ</a></li>
+                        <li><a href="#" role="menuitem">Служба поддержки</a></li>
+                        <li><a id="link" href="#" role="menuitem">Войти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger-wraper">
+                <div class="navBurger" role="navigation" id="navToggle"><button class="help-button">Помощь</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <section class="search-section">
+            <div class="content">
+                <h1>Поиск начислений</h1>
+                <form action="#">
+                    <input type="text" placeholder="Введите данные для поиска">
+                    <button><img src="./images/search-icon.png" alt="search-icon"><span>Найти</span></button>
+                </form>
+                <p class="search-hint">Чем больше параметров введено, тем полнее результаты поиска</p>
+            </div>
+        </section>
+
+        <section class="payment-options">
+            <div class="content">
+                <h1 class="how-pay">Узнайте, как оплатить</h1>
+                <h1 class="can-pay">Здесь можно оплатить</h1>
+
+                <div class="fast-links">
+                    <div>
+                        <a href="#">Штрафы и пошлины ГИБДД</a>
+                        <a href="#">Судебные задолженности</a>
+                        <a href="#">Налоги</a>
+                        <a href="#">Услуги&nbsp;Росреестра</a>
+                        <span>и&nbsp;другие&nbsp;услуги</span>
+                    </div>
+                </div>
+
+                <ul class="accordion">
+                    <li>
+                        <input type="checkbox" checked>
+                        <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
+                        <img class="service-icon" src="./images/baton-icon.png" alt="">
+                        <img class="large-img" src="./images/policeman.png" alt="poliseman">
+                        <h2>Штрафы ГИБДД</h2>
+                        <p>Для поиска укажите номера водительско&shy;го удостоверения и свидетельства о регистрации ТС
+                            или
+                            номер
+                            штрафа.</p>
+                        <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.
+                        </p>
+                        <p><strong>платить Вовремя — дешевле!</strong></p>
+                        <p> В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для
+                            своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
+                        <img class="service-icon" src="./images/car-icon.png" alt="">
+                        <h2>Пошлины ГИБДД</h2>
+                        <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
+                        <img class="service-icon" src="./images/hammer-icon.png" alt="">
+                        <img class="large-img" src="./images/hammer-large.png" alt="large hammer">
+                        <h2>Судебные задолженности</h2>
+                        <p>Для поиска начислений в ГИС ГМП укажите документы:
+                            паспорт&nbsp;РФ,&nbsp;ИНН,&nbsp;СНИЛС или номер Исполнительного&nbsp;производства</p>
+                        <p>Вы&nbsp;можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+                        <p><strong>Удобно!</strong></p>
+                        <p> Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас
+                            платежами.
+                            Информацию о
+                            совершенных платежах сохраняйте в Личном кабинете.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
+                        <img class="service-icon" src="./images/taxes-icon.png" alt="">
+                        <img class="large-img" src="./images/taxes-large.png" alt="taxes">
+                        <h2>Налоги</h2>
+                        <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+                            Индекс налогового документа, усли у вас на руках есть квитанция.</p>
+                        <p><strong>Важно!</strong></p>
+                        <p>Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц.
+                            Принимаются только платежи
+                            физических лиц.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
+                        <h2>Услуги Росреестра</h2>
+                        <img class="service-icon" src="./images/maps-icon.png" alt="">
+                        <img class="large-img" src="./images/register.png" alt="register">
+                        <p>В поисковой строке укажите Код платежа, который был отправлен вам
+                            на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+                        <p><strong>нет кода?</strong></p>
+                        <p> Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос на
+                            оплату
+                            электронных услуг
+                            Росреестра.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="our-partners">
+            <div class="content">
+                <h1>С нами работают</h1>
+                <div class="partners-logos">
+                    <div>
+                        <img src="./images/partner-1.png" alt="">
+                        <p>Партнер 1</p>
+                    </div>
+                    <div>
+                        <img src="./images/partner-2.png" alt="">
+                        <p>Компания-партнер с длинным названием</p>
+                    </div>
+                    <div>
+                        <img src="./images/partner-3.png" alt="">
+                        <p>Партнер 3</p>
+                    </div>
+                    <div>
+                        <img src="./images/partner-4.png" alt="">
+                        <p>Название партнера 4</p>
+                    </div>
+                    <div>
+                        <img src="./images/partner-5.png" alt="">
+                        <p>Компания-партнер 5</p>
+                    </div>
+                    <div>
+                        <img src="./images/partner-6.png" alt="">
+                        <p>Партнер 6 с длинным названием</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="share-button">
+        <label><button><img src="./images/share-icon.png" alt="share-icon"></button></label>
+    </div>
+
+    <footer class="footer">
+        <p class="company-name">© 2012–2018 ООО&nbsp;«Название&nbsp;компании»</p>
+        <ul class="footer-links">
+            <li><a href="#">О сервисе</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+            <li><a href="#">Как это работает</a></li>
+            <li><a href="#">Партнёрам</a></li>
+            <li><a href="#">Статьи и новости</a></li>
+            <li class="tel"><a href="#">8 800 123 4567</a><br><span>звонок по России бесплатный</span></li>
+            <li><a href="#">Обратная связь</a></li>
+            <li><a href="#">Мы вКонтакте</a></li>
+        </ul>
+        <p class="extra-hrefs">Дополнительные ссылки и&nbsp;копирайты&nbsp;ООО&nbsp;«Фирма 2»</p>
+        <img src="./images/comodo-icon.png" alt="comodo">
+        <img src="./images/firm-logo.png" alt="firm logotype">
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@media (min-width: 402px) {
+
+    .our-partners .partners-logos {
+        padding-left: 0;
+
+        div {
+            width: 35%;
+        }
+    }
+
+}
+
+@media (min-width: 551px) {
+
+    .our-partners .partners-logos {
+        padding-left : 3.64vw;
+        padding-right: 3.64vw;
+
+        div {
+            width        : 33%;
+            padding-right: 0;
+        }
+
+        div:nth-of-type(3) {
+            padding-left: 0;
+            padding-top : 8px;
+        }
+
+        div:nth-of-type(4) {
+            padding-top: 65px;
+        }
+    }
+
+}
+
+@media (min-width: 600px) {
+    .navBurger {
+        right: 5vw;
+    }
+}
