@@ -24,4 +24,10 @@
     padding-top: 65px;
   }
 }
+
+@media (min-width: 600px) {
+  .navBurger {
+    right: 5vw;
+  }
+}
 /*# sourceMappingURL=transitional-styles.css.map */

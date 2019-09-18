@@ -156,7 +156,7 @@
 
 .navBurger {
     position: absolute;
-    right   : 31px;
+    right   : 18px;
     top     : 6px;
     width   : 19px;
     height  : 25px;
@@ -192,31 +192,40 @@
 }
 
 .overlayMenu {
-    position  : static;
-    width     : 100%;
-    text-align: center;
+    position      : static;
+    padding-bottom: 1px;
+    padding-left  : 5px;
+    width         : 100%;
+    text-align    : center;
 
     ul {
         width      : 100%;
-        padding-top: 9px;
+        padding-top: 2px;
+        padding-bottom: 7px;
 
         li {
-            box-sizing   : border-box;
-            margin-top   : 0px;
-            margin-bottom: 7px !important;
-            padding      : 0;
-            color        : #0777ba;
-            border       : 0;
-            text-align   : center;
+            box-sizing    : border-box;
+            margin-top    : 0px;
+            margin-bottom : 0px !important;
+            padding       : 0;
+            color         : #0777ba;
+            border        : 0;
+            text-align    : center;
+            padding-bottom: 0 !important;
         }
 
-        li:nth-of-type(2) {
-            margin-bottom: 0;
+        li:nth-of-type(1) {
+            margin-bottom: 7px !important;
+        }
+
+        li:nth-of-type(1) {
+            margin-top: 7px !important;
+            margin-left: 0;
         }
 
         li a {
             margin         : 0;
-            width          : 95.8%;
+            width          : 98.8%;
             padding        : 11px 0px 12px 0px;
             text-indent    : 18px;
             color          : #0777ba;
@@ -232,9 +241,10 @@
         }
 
         li:nth-of-type(4) {
-            padding-top   : 4px;
+            padding-top   : 11px;
             margin-bottom : 0px;
             padding-bottom: 8px;
+            width: 98%;
         }
 
         #link {

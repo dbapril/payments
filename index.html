@@ -33,7 +33,35 @@
                 <div class="navBurger" role="navigation" id="navToggle"><button class="help-button">Помощь</button>
                 </div>
             </div>
+
+
+
         </header>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">
+                    <svg width="21px" height="21px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                            d="M20.989,1.395 L11.899,10.485 L20.707,19.293 L19.293,20.707 L10.485,11.899 L2.395,19.988 L1.011,18.605 L9.101,10.515 L0.293,1.707 L1.707,0.293 L10.515,9.101 L19.605,0.011 L20.989,1.395 Z" />
+                    </svg>
+                </span>
+                <p>Введите логин и пароль для входа в&nbsp;Личный кабинет</p>
+            </div>
+            <div class="modal-body">
+            <form action="">
+                <input type="text" placeholder="Логин">
+                <input type="password" placeholder="Пароль">
+                <button>Войти</button>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">Забыли пароль?</a><br>
+                <a href="#">Регистрация</a>
+            </div>
+        </div>
     </div>
 
     <main>
@@ -62,9 +90,11 @@
                         <span>и&nbsp;другие&nbsp;услуги</span>
                     </div>
                 </div>
+            </div>
 
-                <ul class="accordion">
-                    <li>
+            <ul class="accordion">
+                <li>
+                    <div class="content">
                         <input type="checkbox" checked>
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/baton-icon.png" alt="">
@@ -79,15 +109,20 @@
                         <p><strong>платить Вовремя — дешевле!</strong></p>
                         <p> В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%. Для
                             своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
-                    </li>
-                    <li>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
                         <input type="checkbox" checked>
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/car-icon.png" alt="">
                         <h2>Пошлины ГИБДД</h2>
                         <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
                         <input type="checkbox" checked>
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/hammer-icon.png" alt="">
@@ -101,8 +136,10 @@
                             платежами.
                             Информацию о
                             совершенных платежах сохраняйте в Личном кабинете.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
                         <input type="checkbox" checked>
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/taxes-icon.png" alt="">
@@ -114,8 +151,10 @@
                         <p>Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц.
                             Принимаются только платежи
                             физических лиц.</p>
-                    </li>
-                    <li>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
                         <input type="checkbox" checked>
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <h2>Услуги Росреестра</h2>
@@ -128,9 +167,10 @@
                             оплату
                             электронных услуг
                             Росреестра.</p>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+            </ul>
+
         </section>
 
         <section class="our-partners">
@@ -183,7 +223,7 @@
             <li><a href="#">Обратная связь</a></li>
             <li><a href="#">Мы вКонтакте</a></li>
         </ul>
-        <p class="extra-hrefs">Дополнительные ссылки и&nbsp;копирайты&nbsp;ООО&nbsp;«Фирма 2»</p>
+        <p class="extra-hrefs">Дополнительные ссылки и&nbsp;копирайты&nbsp;ООО «Фирма 2»</p>
         <img src="./images/comodo-icon.png" alt="comodo">
         <img src="./images/firm-logo.png" alt="firm logotype">
     </footer>
