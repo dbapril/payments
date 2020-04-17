@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Settlement</title>
+    <title>Payments</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/accordion.css">
 </head>
@@ -25,7 +25,7 @@
                         <li><a href="#" role="menuitem">Как это работает</a></li>
                         <li><a href="#" role="menuitem">Вопрос-ответ</a></li>
                         <li><a href="#" role="menuitem">Служба поддержки</a></li>
-                        <li><a id="link" href="#" role="menuitem">Войти</a></li>
+                        <li><a id="link" href="#" role="menuitem" onclick="return false">Войти</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +54,7 @@
             <form action="">
                 <input type="text" placeholder="Логин">
                 <input type="password" placeholder="Пароль">
-                <button>Войти</button>
+                <button class="enter-button">Войти</button>
             </form>
             </div>
             <div class="modal-footer">
@@ -83,10 +83,10 @@
 
                 <div class="fast-links">
                     <div>
-                        <a href="#">Штрафы и пошлины ГИБДД</a>
-                        <a href="#">Судебные задолженности</a>
-                        <a href="#">Налоги</a>
-                        <a href="#">Услуги&nbsp;Росреестра</a>
+                        <a href="#finesAndDuties">Штрафы и пошлины ГИБДД</a>
+                        <a href="#litigation">Судебные задолженности</a>
+                        <a href="#dues">Налоги</a>
+                        <a href="#attendance">Услуги&nbsp;Росреестра</a>
                         <span>и&nbsp;другие&nbsp;услуги</span>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/baton-icon.png" alt="">
                         <img class="large-img" src="./images/policeman.png" alt="poliseman">
-                        <h2>Штрафы ГИБДД</h2>
+                        <h2 id="finesAndDuties">Штрафы ГИБДД</h2>
                         <p>Для поиска укажите номера водительско&shy;го удостоверения и свидетельства о регистрации ТС
                             или
                             номер
@@ -127,7 +127,7 @@
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/hammer-icon.png" alt="">
                         <img class="large-img" src="./images/hammer-large.png" alt="large hammer">
-                        <h2>Судебные задолженности</h2>
+                        <h2 id="litigation">Судебные задолженности</h2>
                         <p>Для поиска начислений в ГИС ГМП укажите документы:
                             паспорт&nbsp;РФ,&nbsp;ИНН,&nbsp;СНИЛС или номер Исполнительного&nbsp;производства</p>
                         <p>Вы&nbsp;можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
@@ -144,7 +144,7 @@
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
                         <img class="service-icon" src="./images/taxes-icon.png" alt="">
                         <img class="large-img" src="./images/taxes-large.png" alt="taxes">
-                        <h2>Налоги</h2>
+                        <h2 id="dues">Налоги</h2>
                         <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
                             Индекс налогового документа, усли у вас на руках есть квитанция.</p>
                         <p><strong>Важно!</strong></p>
@@ -157,7 +157,7 @@
                     <div class="content">
                         <input type="checkbox" checked>
                         <i><img class="up-arrow" src="./images/up-arrow.png" alt=""></i>
-                        <h2>Услуги Росреестра</h2>
+                        <h2 id="attendance">Услуги Росреестра</h2>
                         <img class="service-icon" src="./images/maps-icon.png" alt="">
                         <img class="large-img" src="./images/register.png" alt="register">
                         <p>В поисковой строке укажите Код платежа, который был отправлен вам
@@ -214,14 +214,14 @@
     <footer class="footer">
         <p class="company-name">© 2012–2018 ООО&nbsp;«Название&nbsp;компании»</p>
         <ul class="footer-links">
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Способы оплаты</a></li>
-            <li><a href="#">Как это работает</a></li>
-            <li><a href="#">Партнёрам</a></li>
-            <li><a href="#">Статьи и новости</a></li>
-            <li class="tel"><a href="#">8 800 123 4567</a><br><span>звонок по России бесплатный</span></li>
-            <li><a href="#">Обратная связь</a></li>
-            <li><a href="#">Мы вКонтакте</a></li>
+            <li><a href="#" onclick="return false">О сервисе</a></li>
+            <li><a href="#" onclick="return false">Способы оплаты</a></li>
+            <li><a href="#" onclick="return false">Как это работает</a></li>
+            <li><a href="#" onclick="return false">Партнёрам</a></li>
+            <li><a href="#" onclick="return false">Статьи и новости</a></li>
+            <li class="tel"><a href="tel: 8 800 123 4567">8 800 123 4567</a><br><span>звонок по России бесплатный</span></li>
+            <li><a href="#" onclick="return false">Обратная связь</a></li>
+            <li><a href="#" onclick="return false">Мы вКонтакте</a></li>
         </ul>
         <p class="extra-hrefs">Дополнительные ссылки и&nbsp;копирайты&nbsp;ООО «Фирма 2»</p>
         <img src="./images/comodo-icon.png" alt="comodo">

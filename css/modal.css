@@ -119,6 +119,10 @@
   border-bottom: 2px dotted blue;
 }
 
+.enter-button {
+  cursor: pointer;
+}
+
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
